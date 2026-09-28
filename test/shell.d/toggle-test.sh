@@ -76,7 +76,7 @@ HOME="$test_home" omarchy-toggle-fullscreen-desktop
 [[ ! -f $bar_flag && ! -f $gaps_flag ]] || fail "fullscreen toggle restores the bar and the gaps together"
 pass "fullscreen toggle restores the bar and the gaps together"
 
-HOME="$test_home" omarchy-toggle-bar on
+HOME="$test_home" omarchy-toggle-bar off
 HOME="$test_home" omarchy-toggle-fullscreen-desktop
 [[ -f $bar_flag && -f $gaps_flag ]] || fail "fullscreen toggle pulls a half-hidden desktop into full screen"
 pass "fullscreen toggle pulls a half-hidden desktop into full screen"
